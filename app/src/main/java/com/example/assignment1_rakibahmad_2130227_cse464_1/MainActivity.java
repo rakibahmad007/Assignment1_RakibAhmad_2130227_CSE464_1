@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCount.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { //increments click by 1 on every click
                 count++;
 
                 textViewCount.setText(String.valueOf(count));
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void showToast(View view) {
+    public void showToast(View view) { //displays a toast msg
         String msg = "Hello Toast!";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(getApplicationContext(), msg, duration);
